@@ -12,6 +12,8 @@ import { ContatoComponent } from './institucional/contato/contato.component';
 import { RouterModule } from '@angular/router';
 import { APP_BASE_HREF } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ListaProdutoComponent } from './produtos/lista-produto/lista-produto.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,11 +23,13 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     SobreComponent,
     ContatoComponent,
+    ListaProdutoComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    [RouterModule.forRoot(rootRouterConfig)],
+    HttpClientModule,
+    [RouterModule.forRoot(rootRouterConfig)]
   ],
   providers: [
     ProdutoService,
