@@ -25,7 +25,7 @@ import { APP_BASE_HREF } from '@angular/common';
     [RouterModule.forRoot(rootRouterConfig)],
   ],
   providers: [
-    {provide: APP_BASE_HREF, useValue: '/SmartStore'}
+    {provide: APP_BASE_HREF, useValue: '/'}
   ],
   bootstrap: [AppComponent]
 })
